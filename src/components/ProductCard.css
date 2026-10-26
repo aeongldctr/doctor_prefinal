@@ -1,0 +1,214 @@
+.product-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card.card-low-stock {
+  border: 1.5px solid #f87171;
+  background-color: #fffbfb;
+}
+
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  cursor: pointer;
+  background-color: #f1f5f9;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stock-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+.badge-low {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+}
+
+.badge-good {
+  background-color: #dcfce7;
+  color: #15803d;
+  border: 1px solid #86efac;
+}
+
+.category-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #ffffff;
+  font-size: 0.72rem;
+  padding: 3px 8px;
+  border-radius: 12px;
+  text-transform: capitalize;
+}
+
+.card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-rating {
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+}
+
+.stars {
+  color: #f59e0b;
+}
+
+.rating-num {
+  color: #64748b;
+  margin-left: 4px;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.card-title:hover {
+  color: #b51727;
+}
+
+.card-desc {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  height: 2.8em;
+  overflow: hidden;
+}
+
+.card-stock-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.82rem;
+}
+
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.qty-btn {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.qty-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.qty-value {
+  font-weight: 700;
+  min-width: 18px;
+  text-align: center;
+}
+
+.qty-low {
+  color: #b91c1c;
+}
+
+.card-subtotal-box {
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  padding: 6px 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 0.8rem;
+}
+
+.subtotal-amount {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.card-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-tag {
+  background-color: #7f1d1d;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.details-btn {
+  background: transparent;
+  border: none;
+  color: #b51727;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.details-btn:hover {
+  text-decoration: underline;
+}
+
+.add-cart-btn {
+  background-color: #b51727;
+  color: #ffffff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-cart-btn:hover:not(:disabled) {
+  background-color: #991b1b;
+}
+
+.add-cart-btn:disabled {
+  background-color: #cbd5e1;
+  cursor: not-allowed;
+}
+
